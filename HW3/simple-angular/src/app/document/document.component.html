@@ -1,0 +1,16 @@
+<app-searching-panel (productsFiltered)="onProductsFound($event)"
+                     (eventText)="textWarning($event)" ></app-searching-panel>
+<p>document works!</p>
+<ng-container *ngIf = "notFoundMessage">
+  <p style="display: flex; justify-content: center">{{notFoundMessage}}</p>
+</ng-container>
+
+<div class = "product-container" *ngFor="let product of filteredProducts">
+  <p class = "product-id">
+    {{product.id}}
+  </p>
+  <p class = "product-name">
+    {{product.name}}
+  </p>
+</div>
+<button (click)="res()"></button>
