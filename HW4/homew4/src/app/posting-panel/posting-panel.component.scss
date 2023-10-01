@@ -1,0 +1,32 @@
+.search-panel {
+  text-align: center;
+  margin: 25px 0;
+}
+
+#searchInput {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+#postButton{
+  margin-left: 15px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+#postButton:hover{
+  cursor: pointer;
+}
+
+.statusFine{
+
+}
+
+.statusNotFine{
+  background-color: red;
+}
+

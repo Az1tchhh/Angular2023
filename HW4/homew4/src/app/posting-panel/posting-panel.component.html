@@ -1,0 +1,8 @@
+<p>if you dont write in neither a story input nor date, they will be red (ngClass)</p>
+<div class="search-panel">
+
+  <input [ngClass] = "statusFine||storyText ? 'statusFine' : 'statusNotFine'" type="text" id="searchInput" placeholder="Story..." [(ngModel)]="storyText">
+  <input [ngClass] = "statusFine||date ? 'statusFine' : 'statusNotFine'" type="text" id="dateInput" placeholder="Todays date" [(ngModel)]="date">
+
+  <button id="postButton" (click)="post()">Post</button>
+</div>

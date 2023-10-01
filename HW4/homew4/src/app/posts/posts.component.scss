@@ -1,0 +1,99 @@
+.container {
+
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 0;
+  background-color: #f4f4f4;
+}
+
+.hero h1 {
+  font-size: 36px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta-button:hover{
+  cursor: pointer;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+
+.testimonial {
+  text-align: center;
+}
+
+.testimonial img {
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

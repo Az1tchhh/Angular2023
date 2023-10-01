@@ -1,0 +1,44 @@
+<div class="container">
+  <header>
+    <nav>
+      <div class="logo">Blog</div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to your blog</h1>
+    <p>Start activity to write your wishes</p>
+    <ng-container *ngIf = "!activity">
+      <p>this is /ng-container/> directive </p>
+      <a class="cta-button" (click)="changeStatus()">Start Yout Blog</a>
+    </ng-container>
+    <ng-container *ngIf = "activity">
+      <app-posting-panel></app-posting-panel>
+    </ng-container>
+  </section>
+
+  <section class="features">
+    <div class = "posts">
+      <div *ngFor = "let post of posts">
+        <h3>{{post.date}}</h3>
+        <p>{{post.storyText}}</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2023 Blog. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+
